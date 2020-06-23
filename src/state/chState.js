@@ -5,19 +5,19 @@ const initialState = [
         id: 1,
         title: 'Country',
         option: 'Spain',
-        selected: true,
+        selected: false,
         subOption: [
             {
                 id: 1,
                 title: 'Club',
                 option: 'Real',
-                selected: true,
+                selected: false,
                 subOption: [
                     {
                         id: 1,
                         title: 'Player',
                         option: 'Benzema',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 17,
                     },
@@ -49,7 +49,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Messi',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 21,
                     },
@@ -81,7 +81,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Parekho',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 8,
                     },
@@ -115,13 +115,13 @@ const initialState = [
                 id: 1,
                 title: 'Club',
                 option: 'Juventus',
-                selected: true,
+                selected: false,
                 subOption: [
                     {
                         id: 1,
                         title: 'Player',
                         option: 'Ronaldo',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 22,
                     },
@@ -153,7 +153,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Lukaku',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 18,
                     },
@@ -185,7 +185,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Jeko',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 12,
                     },
@@ -219,13 +219,13 @@ const initialState = [
                 id: 1,
                 title: 'Club',
                 option: 'Liverpool',
-                selected: true,
+                selected: false,
                 subOption: [
                     {
                         id: 1,
                         title: 'Player',
                         option: 'Salah',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 16,
                     },
@@ -257,7 +257,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Obameyang',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 17,
                     },
@@ -289,7 +289,7 @@ const initialState = [
                         id: 1,
                         title: 'Player',
                         option: 'Rashford',
-                        selected: true,
+                        selected: false,
                         subOption: [],
                         goals: 14,
                     },
@@ -315,4 +315,4 @@ const initialState = [
     }
 ]
 
-export const stateContext = createContext(initialState);
+export const chStateContext = createContext(initialState);

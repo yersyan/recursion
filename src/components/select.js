@@ -15,13 +15,20 @@ export const Select = ({ items }) => {
     }
 
     return <div className="selectBlock">
+        {items.map((item, index) => {
+            return index === 0 && <label className="label">{`${item.title}:`}</label>
+        })}
         <select onChange={onChange} defaultValue={value} className="select">
-            {items.map(item => (
-                <option selected={item.selected} value={item.option} key={item.id} defaultValue={value}>{item.option}</option>
-            ))}
+            {items.map(item => {
+                return <option selected={item.selected} value={item.option} key={item.id}
+                               defaultValue={value}>{item.option}</option>
+            })}
         </select>
         {
             items.map(item => {
+                if (item.selected && item.goals) {
+                    return <div className="goals">{`${item.goals} goals`}</div>
+                }
                 return item.selected && <Select items={item.subOption} key={item.id}/>
             })
         }

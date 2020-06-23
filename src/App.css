@@ -4,6 +4,8 @@
     justify-content: center;
     color: maroon;
     font-weight: 700;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .select{
     width: 10rem;
@@ -12,5 +14,39 @@
     font-size: 1.2rem;
     background-color: aquamarine;
     color: maroon;
+    font-weight: 700;
+    cursor: pointer;
+}
+.goals{
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: #555;
+    color: lime;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+.label{
+    font-size: 1.4rem;
+}
+.checkboxBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.checkboxLabel{
+    width: 15vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: maroon;
+    font-weight: 700;
+}
+.checkboxInput{
+    margin-left: 1rem;
+}
+.checkboxGoals{
+    margin-left: 1rem;
+    color: red;
     font-weight: 700;
 }
